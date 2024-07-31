@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+        *,
+        ::after,
+        ::before{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color: rgb(41, 40, 40);
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 'Hind', sans-serif;
+  
+            color: #adad90;
+  
+        }
+        .container{
+            display: flex;
+            min-height: 100vh;
+            
+            margin: 0 auto;
+            padding: 4rem;
+            width: 48rem;
+        }
+        h2{
+            text-align: center;
+            color: rgb(223, 226, 50);
+            font-weight: bold;
+            margin:20px;
+            
+        }
+
+        
+
+.accordion .item1 button[aria-expanded='true'] {
+    border: 1px solid #d7ce11;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #fafaf9;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: rgb(15, 14, 14);
+  outline: none;
+  margin-top: 15px;
+  box-shadow: 5px 5px 0px rgb(184, 175, 175);
+}
+
+.accordion button:hover
+ {
+    cursor: pointer;
+  color: #f9fc9b;
+  border:1px solid #f9fc9b;
+  box-shadow: 5px 5px 4px #f9fc9b;
+}
+.accordion button:focus{
+    cursor: pointer;
+  color: #fdf903;
+  border: 1px solid #f3fc02;
+  box-shadow: 5px 5px 4px #f3fc02;
+}
+
+.accordion button:hover::after{
+    cursor: pointer;
+  color: #f9fc9b;
+  border:1px solid #f9fc9b;
+  box-shadow: 5px 5px 4px #f9fc9b;
+}
+.accordion button:focus::after{
+    cursor: pointer;
+  color: #fdf903;
+  border: 1px solid #f3fc02;
+  box-shadow: 5px 5px 4px #f3fc02;
+}
+.accordion button .title {
+  padding: 1em 1.5em 1em 1em;
+  
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+ 
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #d0e81d;
+  box-shadow: 5px 5px 4px #f3fc02;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .define {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .define {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+  box-shadow:5px 5px 4px #f3fc02 ;
+  border: 1px solid #f3fc02;
+}
+.accordion .define p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+  padding:10px
+}
+    </style>
+    </head>
+    <body>
+        <h2>Frequently Asked Question</h2>
+        <div class="container">
+            
+            <div class="accordion">
+                <div class="item1">
+                    <button class="bn1" aria-expanded="false" >
+                        <span class="title"> How does climate change impact the economy?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="define">
+                        <p> Climate change can have significant economic implications, affecting industries, infrastructure, and financial stability. Extreme weather events, such as hurricanes and droughts, can disrupt agricultural production, damage infrastructure, and increase insurance costs.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item1">
+                    <button class="bn1" aria-expanded="false" >
+                        <span class="title"> What are the main causes of deforestation?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="define">
+                        <p>Deforestation is primarily caused by agricultural expansion, logging, infrastructure development, and urbanization. Clearing land for agriculture, such as cattle ranching and palm oil plantations, is a major driver in tropical regions.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item1">
+                    <button class="bn1" aria-expanded="false" >
+                        <span class="title">How does stress impact mental health?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="define">
+                        <p>Chronic stress can have detrimental effects on mental health, leading to conditions such as anxiety disorders, depression, and burnout. Prolonged exposure to stress hormones, such as cortisol, can disrupt neurotransmitter function and impair brain structure, affecting mood regulation and cognitive function.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item1">
+                    <button class="bn1" aria-expanded="false" >
+                        <span class="title">How does artificial intelligence benefit various industries?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="define">
+                        <p>Artificial intelligence (AI) offers numerous benefits across industries, including increased efficiency, automation of repetitive tasks, improved decision-making through data analysis, and enhanced customer experiences. </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item1">
+                    <button class="bn1" aria-expanded="false" >
+                        <span class="title">What are the advantages of renewable energy sources over fossil fuels?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="define">
+                        <p> Renewable energy sources, such as solar, wind, and hydroelectric power, offer several advantages over fossil fuels. They produce minimal greenhouse gas emissions, helping to mitigate climate change.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item1">
+                    <button class="bn1" aria-expanded="false" >
+                        <span class="title">What is the significance of biodiversity conservation?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="define">
+                        <p>Biodiversity conservation is essential for maintaining ecosystem health and resilience, supporting ecosystem services vital for human well-being, such as clean air and water, soil fertility, and pollination.</p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
